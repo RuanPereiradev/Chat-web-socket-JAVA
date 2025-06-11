@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #357bcd;
+}
+
+.hidden {
+    display: none;
+}
+
+#username-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #d1dae6;
+    text-align: center;
+}
+
+.username-page-container {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+.username-page-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.accent {
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.accent:hover {
+    background-color: #254a9c;
+}
+
+#chat-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f8fafc;
+}
+
+.chat-header {
+    padding: 16px;
+    background-color: #3366cc;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.connecting {
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    color: #666;
+    background-color: #e0e7f0;
+}
+
+#messageArea {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f0f4f9;
+}
+
+#messageArea li {
+    margin-bottom: 10px;
+    background-color: #dce6f7;
+    padding: 10px 14px;
+    border-radius: 6px;
+    max-width: 70%;
+}
+
+#messageForm {
+    padding: 16px;
+    background-color: #e0e7f0;
+    border-top: 1px solid #ccc;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input.form-control {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.input-group button.primary {
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-group button.primary:hover {
+    background-color: #254a9c;
+}
+
+@media (max-width: 600px) {
+    .username-page-container {
+        padding: 30px 20px;
+    }
+
+    .chat-header {
+        font-size: 1.1em;
+    }
+}
